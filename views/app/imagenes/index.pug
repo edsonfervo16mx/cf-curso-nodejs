@@ -1,0 +1,18 @@
+extends ../../layout.pug
+block contenido
+	h1 Imagenes
+	div(class="container")
+		div(class="row")
+			for imagen in imagenes
+				div(class="col-sm-6 col-md-4")
+					div(class="thumbnail")
+						div(class="caption")
+							h3=imagen.title
+							p texto ejemplo
+							p=imagen._id
+							p #{'"/app/imagenes/'+imagen._id+'/edit"'}
+							p #{imagen._id}
+							p Creado por #{imagen.creator}
+							a(href="/app/imagenes/"+imagen._id+"/edit" class="btn btn-default" role="button") Editar
+							form(action="/app/imagenes/"+imagen._id+"?_method=DELETE" method="POST")
+								input(type="submit", class="btn btn-danger", value="Eliminar")

@@ -1,0 +1,29 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "example projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example",
+    "nodejs"
+  ],
+  "author": "edsonfer",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "connect-redis": "^3.2.0",
+    "cookie-session": "^2.0.0-alpha.2",
+    "express": "^4.14.0",
+    "express-formidable": "^1.0.0",
+    "express-redis-cache": "^0.5.0",
+    "express-session": "^1.15.0",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.7.7",
+    "pug": "^2.0.0-beta6",
+    "redis": "^2.6.5",
+    "socket.io": "^1.7.2"
+  }
+}

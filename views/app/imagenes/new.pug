@@ -1,0 +1,15 @@
+extends ../../layout.pug
+block contenido
+	h1 Sign In
+	div(class="row")
+		div(class="col-lg-4")
+			h1 Subir image
+			form(action="/app/imagenes" method="POST" enctype="multipart/form-data")
+				div(class="form-group")
+					label(for="title") Title
+					input(type="text", name="title", placeholder="title", id="title", class="form-control")
+				div(class="form-group")
+					label(for="file") Image
+					input(type="file", name="file", id="file")
+				div
+					input(type="submit" value="Subir" class="btn btn-info")

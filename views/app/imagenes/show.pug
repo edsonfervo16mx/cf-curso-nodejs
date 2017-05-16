@@ -1,0 +1,6 @@
+extends ../../layout.pug
+block contenido
+	h1 #{imagen.title}
+	img(src="/files/img/"+imagen._id+"."+imagen.extension+"" class="img-responsive")
+	if(typeof imagen.creator != "undefined")
+		p Creado por #{imagen.creator.email}
